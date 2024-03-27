@@ -11,27 +11,36 @@
     <title>The Sortinghat</title>
   </head>
   <body>
-    <header>
-    <h1>The Sortinghat <i class="fa-solid fa-hat-wizard"></i></h1>
+    <!--<header>
+      
+      <nav>
+        <button>Startpage</button>
+        <button>Instructions</button>
+      <button>Correct answers</button>
+      </nav>
+    </header>-->
+    <!-- Main content -->
+    <main>
+      <h1>The Sortinghat</h1>
     <p>Sort the characters into their Hogwarts House.</p>
-  </header>
     <!-- Div containing name of character -->
-    <div></div>
+    <div id="character-area">
+      <span id="name">x</span>
+    </div>
     <!-- Div containing divs with buttons for each house-->
-    <div>
-      <div class="house">
-        <button>Gryffindor<i class="fa-solid fa-shield"></i></button>
-      </div>
-      <div class="house">
-        <button>Hufflepuff<i class="fa-solid fa-shield"></i></button>
-      </div>
-      <div class="house">
-        <button>Ravenclaw<i class="fa-solid fa-shield"></i></button>
-      </div>
-      <div class="house">
-        <button>Slytherin<i class="fa-solid fa-shield"></i></button>
+    <div class="answer-area">
+      <div id="house-buttons">
+        <button data-type="gryffindor" id="btn-gryffindor" aria-label="gryffindor"><i class="fa-solid fa-shield"></i></button>
+      
+        <button data-type="hufflepuff" id="btn-hufflepuff" aria-label="hufflepuff"><i class="fa-solid fa-shield"></i></button>
+      
+      
+        <button data-type="ravenclaw" id="btn-ravenclaw" aria-label="ravenclaw"><i class="fa-solid fa-shield"></i></button>
+     
+        <button data-type="slytherin" id="btn-slytherin" aria-label="slytherin"><i class="fa-solid fa-shield"></i></button>
       </div>
     </div>
+  </main>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/ccedcc2638.js"
