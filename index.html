@@ -22,23 +22,25 @@
     <!-- Main content -->
     <main>
       <h1>The Sortinghat</h1>
-    <p>Sort the characters into their Hogwarts House.</p>
-    <!-- Div containing name of character -->
-    <div id="character-area">
-      <span id="character">x</span>
-    </div>
+    <p>Sort <span id="character">x</span> into their Hogwarts House.</p>
+   
+    
     <!-- Div containing divs with buttons for each house-->
     
-      <div>
+      <div id="hogwarts-houses">
 
-        <button data-type="gryffindor" id="btn-gryffindor" aria-label="gryffindor" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
+        <div><button data-type="gryffindor" id="btn-gryffindor" aria-label="gryffindor" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
+        <h3>Gryffindor</h3></div>
       
-        <button data-type="hufflepuff" id="btn-hufflepuff" aria-label="hufflepuff" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
+        <div><button data-type="hufflepuff" id="btn-hufflepuff" aria-label="hufflepuff" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
+        <h3>Hufflepuff</h3></div>
       
       
-        <button data-type="ravenclaw" id="btn-ravenclaw" aria-label="ravenclaw" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
+        <div><button data-type="ravenclaw" id="btn-ravenclaw" aria-label="ravenclaw" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
+        <h3>Ravenclaw</h3></div>
      
-        <button data-type="slytherin" id="btn-slytherin" aria-label="slytherin" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
+        <div><button data-type="slytherin" id="btn-slytherin" aria-label="slytherin" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
+        <h3>Slytherin</h3></div>
       </div>
     
   </main>

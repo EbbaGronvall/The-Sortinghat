@@ -31,6 +31,18 @@ main {
     padding: 5px;
 
 }
+#hogwarts-houses {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 90%;
+}
+#hogwarts-houses h3 {
+margin-top: 0;
+font-size: 140%;
+}
 .house-buttons {
     width: 100px;
     height: 100px;
@@ -38,7 +50,7 @@ main {
     font-size: 70px;
     padding: 5px;
     border: 2px solid;
-}
+    }
 #btn-gryffindor {
     color: rgb(146,39,52);
 }

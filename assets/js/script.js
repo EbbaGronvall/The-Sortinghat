@@ -1,3 +1,4 @@
+
 // Array of objects with the names
 let characters = [
     // Gryffindor
