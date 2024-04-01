@@ -3,22 +3,58 @@ let btnGryffindor = document.getElementById('btn-gryffindor');
 let btnHufflepuff = document.getElementById('btn-hufflepuff');
 let btnRavenclaw = document.getElementById('btn-ravenclaw');
 let btnSlytherin = document.getElementById('btn-slytherin');
+let house = this.getAttribute('data-type');
+let newCharacter = document.getElementById('character').value = ${characters};
+
+function newQuestion() {
+    newCharacter = arr[randomIndex];
+
+}
 
 btnGryffindor.addEventListener('click', function(){
-    character.innerText = characters[0].name;
+    if (characters === "gryffindor") {
+        addPoint();
+        addAnsweredQuestion();
+        newQuestion();
+    } else {
+        addAnsweredQuestion();
+        newQuestion();
+    }
+    
 });
 btnHufflepuff.addEventListener('click', function(){
-    character.innerText = ;
+    if (characters === "hufflepuff") {
+        addPoint();
+        addAnsweredQuestion();
+        newQuestion();
+    } else {
+        addAnsweredQuestion();
+        newQuestion();
+    }
 });
 btnRavenclaw.addEventListener('click', function(){
-    character.innerText = ;
-})
+    if (characters === "ravenclaw") {
+        addPoint();
+        addAnsweredQuestion();
+        newQuestion();
+    } else {
+        addAnsweredQuestion();
+        newQuestion();
+    }
+});
 btnSlytherin.addEventListener('click', function(){
-    character.innerText = ;
-})
+    if (characters === "slytherin") {
+        addPoint();
+        addAnsweredQuestion();
+        newQuestion();
+    } else {
+        addAnsweredQuestion();
+        newQuestion();
+    }
+});
 // Array of objects with the names
 let characters = [
-    // Gryffindor
+    // Easy
     {
         name : "Harry Potter",
         house : "gryffindor",
@@ -40,20 +76,151 @@ let characters = [
         difficulty : "easy",
     },
     {
-        name : "Seamus Finnigan",
+        name : "Percy Weasley",
         house : "gryffindor",
-        difficulty : "medium",
+        difficulty : "easy",
     },
     {
-        name : "Dean Thomas",
+        name : "Fred Weasley",
         house : "gryffindor",
-        difficulty : "medium",
+        difficulty : "easy",
     },
     {
-        name : "Lavender Brown",
+        name : "George Weasley",
         house : "gryffindor",
-        difficulty : "medium",
+        difficulty : "easy",
     },
+    {
+        name : "Ginny Weasley",
+        house : "gryffindor",
+        difficulty : "easy",
+    },
+    {
+        name : "Cedric Diggory",
+        house : "hufflepuff",
+        difficulty : "easy",
+    },
+    {
+        name : "Tom Riddle",
+        house : "slytherin",
+        difficulty : "easy",
+    },
+    {
+        name : "Severus Snape",
+        house : "slytherin",
+        difficulty : "easy",
+    },
+    {
+        name : "Vincent Crabbe",
+        house : "slytherin",
+        difficulty : "easy",
+    },
+    {
+        name : "Gregory Goyle",
+        house : "slytherin",
+        difficulty : "easy",
+    },
+    {
+        name : "Draco Malfoy",
+        house : "slytherin",
+        difficulty : "easy",
+    },
+   //Medium
+   { 
+
+    name : "Seamus Finnigan", 
+
+    house : "gryffindor", 
+
+    difficulty : "medium", 
+
+}, 
+
+{ 
+
+    name : "Dean Thomas", 
+
+    house : "gryffindor", 
+
+    difficulty : "medium", 
+
+}, 
+
+{ 
+
+    name : "Lavender Brown", 
+
+    house : "gryffindor", 
+
+    difficulty : "medium", 
+
+}, 
+
+{ 
+
+    name : "Oliver Wood", 
+
+    house : "gryffindor", 
+
+    difficulty : "medium", 
+
+}, 
+{
+    name : "Lee Jordan",
+    house : "gryffindor",
+    difficulty : "medium",
+},
+{
+    name : "Katie Bell",
+    house : "gryffindor",
+    difficulty : "medium",
+},
+{
+    name : "Parvati Patil",
+    house : "gryffindor",
+    difficulty : "medium",
+},
+{
+    name : "Colin Creevey",
+    house : "gryffindor",
+    difficulty : "medium",
+},
+{
+    name : "Justin Finch-Fletchley",
+    house : "hufflepuff",
+    difficulty : "medium",
+},
+{
+    name : "Cho Chang",
+    house : "ravenclaw",
+    difficulty : "medium",
+},
+{
+    name : "Luna Lovegood",
+    house : "ravenclaw",
+    difficulty : "medium",
+},
+{
+    name : "Bellatrix Lestrange",
+    house : "slytherin",
+    difficulty : "medium",
+},
+{
+    name : "Narcissa Malfoy",
+    house : "slytherin",
+    difficulty : "medium",
+},
+{
+    name : "Lucius Malfoy",
+    house : "slytherin",
+    difficulty : "medium",
+},
+{
+    name : "Marcus Flint",
+    house : "slytherin",
+    difficulty : "medium",
+},
+//Hard
     {
         name : "Sirius Black",
         house : "gryffindor",
@@ -89,66 +256,28 @@ let characters = [
         house : "gryffindor",
         difficulty : "hard",
     },
-    {
-        name : "Percy Weasley",
-        house : "gryffindor",
-        difficulty : "easy",
-    },
-    {
-        name : "Oliver Wood",
-        house : "gryffindor",
-        difficulty : "medium",
-    },
+   
+   
     {
         name : "Angelina Johnson",
         house : "gryffindor",
         difficulty : "hard",
     },
-    {
-        name : "Lee Jordan",
-        house : "gryffindor",
-        difficulty : "medium",
-    },
+   
     {
         name : "Alicia Spinnet",
         house : "gryffindor",
         difficulty : "hard",
     },
-    {
-        name : "Fred Weasley",
-        house : "gryffindor",
-        difficulty : "easy",
-    },
-    {
-        name : "George Weasley",
-        house : "gryffindor",
-        difficulty : "easy",
-    },
-    {
-        name : "Katie Bell",
-        house : "gryffindor",
-        difficulty : "medium",
-    },
+   
+   
     {
         name : "Cormac McClaggen",
         house : "gryffindor",
         difficulty : "hard",
     },
-    {
-        name : "Parvati Patil",
-        house : "gryffindor",
-        difficulty : "medium",
-    },
-    {
-        name : "Colin Creevey",
-        house : "gryffindor",
-        difficulty : "medium",
-    },
-    {
-        name : "Ginny Weasley",
-        house : "gryffindor",
-        difficulty : "easy",
-    },
+    
+    
     {
         name : "Romilda Vane",
         house : "gryffindor",
@@ -159,7 +288,6 @@ let characters = [
         house : "gryffindor",
         difficulty : "hard",
     },
-    // Hufflepuff
     {
         name : "Newt Scamander",
         house : "hufflepuff",
@@ -170,11 +298,7 @@ let characters = [
         house : "hufflepuff",
         difficulty : "hard",
     },
-    {
-        name : "Cedric Diggory",
-        house : "hufflepuff",
-        difficulty : "easy",
-    },
+   
     {
         name : "Ernie Macmillan",
         house : "hufflepuff",
@@ -185,11 +309,7 @@ let characters = [
         house : "hufflepuff",
         difficulty : "hard",
     },
-    {
-        name : "Justin Finch-Fletchley",
-        house : "hufflepuff",
-        difficulty : "medium",
-    },
+   
     {
         name : "Susan Bones",
         house : "hufflepuff",
@@ -200,12 +320,8 @@ let characters = [
         house : "hufflepuff",
         difficulty : "hard",
     },
-    // Ravenclaw
-    {
-        name : "Cho Chang",
-        house : "ravenclaw",
-        difficulty : "medium",
-    },
+
+   
     {
         name : "Marietta Edgecombe",
         house : "ravenclaw",
@@ -226,62 +342,15 @@ let characters = [
         house : "ravenclaw",
         difficulty : "hard",
     },
-    {
-        name : "Luna Lovegood",
-        house : "ravenclaw",
-        difficulty : "medium",
-    },
-    // Slytherin
-    {
-        name : "Tom Riddle",
-        house : "slytherin",
-        difficulty : "easy",
-    },
-    {
-        name : "Bellatrix Lestrange",
-        house : "slytherin",
-        difficulty : "medium",
-    },
-    {
-        name : "Narcissa Malfoy",
-        house : "slytherin",
-        difficulty : "medium",
-    },
-    {
-        name : "Lucius Malfoy",
-        house : "slytherin",
-        difficulty : "medium",
-    },
-    {
-        name : "Severus Snape",
-        house : "slytherin",
-        difficulty : "easy",
-    },
-    {
-        name : "Marcus Flint",
-        house : "slytherin",
-        difficulty : "medium",
-    },
+    
+    
+    
     {
         name : "Millicent Bulstrode",
         house : "slytherin",
         difficulty : "hard",
     },
-    {
-        name : "Vincent Crabbe",
-        house : "slytherin",
-        difficulty : "easy",
-    },
-    {
-        name : "Gregory Goyle",
-        house : "slytherin",
-        difficulty : "easy",
-    },
-    {
-        name : "Draco Malfoy",
-        house : "slytherin",
-        difficulty : "easy",
-    },
+   
     {
         name : "Pansy Parkinson",
         house : "slytherin",
@@ -293,3 +362,19 @@ let characters = [
         difficulty : "hard",
     },
 ]
+// A function that keeps score of all the correct answers
+function addPoint() {
+    let correctAnswers = parseInt(document.getElementById('correct-answer').innerText);
+    document.getElementById('correct-answer').innerText = ++correctAnswers; 
+}
+// A function that keeps score of the amount of questions answered
+function addAnsweredQuestion() {
+    let questionsAnswered = parseInt(document.getElementById('questions-answered').innerText);
+    document.getElementById('questions-answered').innerText = ++questionsAnswered;
+}
+// A function that checks if the answer is correct
+
+// What happends if the answer is correct?
+
+//How many questions have I answered?
+
