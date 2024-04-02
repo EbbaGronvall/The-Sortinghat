@@ -6,43 +6,78 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-   
 
     <title>The Sortinghat</title>
   </head>
   <body>
-    
     <!-- Main content -->
     <main>
-      <div class="game-play">
-      <h1>The Sortinghat</h1>
-    <p>Sort <span id="character">X</span> into their Hogwarts House.</p>
-  </div>
-    
-    <!-- Div containing divs with buttons for each house-->
-    
-      <div id="hogwarts-houses" class="game-play">
+      <div id="game-text">
+        <h1>The Sortinghat</h1>
+        <p>Sort <span id="character">X</span> into their Hogwarts House.</p>
+      </div>
 
-        <div><button data-type="gryffindor" id="btn-gryffindor" aria-label="gryffindor" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
-        <h3>Gryffindor</h3></div>
-      
-        <div><button data-type="hufflepuff" id="btn-hufflepuff" aria-label="hufflepuff" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
-        <h3>Hufflepuff</h3></div>
-      
-      
-        <div><button data-type="ravenclaw" id="btn-ravenclaw" aria-label="ravenclaw" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
-        <h3>Ravenclaw</h3></div>
-     
-        <div><button data-type="slytherin" id="btn-slytherin" aria-label="slytherin" class="house-buttons"><i class="fa-solid fa-shield"></i></button>
-        <h3>Slytherin</h3></div>
+      <!-- Div containing divs with buttons for each house-->
+
+      <div id="hogwarts-houses">
+        <div>
+          <button
+            data-type="gryffindor"
+            id="btn-gryffindor"
+            aria-label="gryffindor"
+            class="house-buttons"
+          >
+            <i class="fa-solid fa-shield"></i>
+          </button>
+          <h3>Gryffindor</h3>
+        </div>
+
+        <div>
+          <button
+            data-type="hufflepuff"
+            id="btn-hufflepuff"
+            aria-label="hufflepuff"
+            class="house-buttons"
+          >
+            <i class="fa-solid fa-shield"></i>
+          </button>
+          <h3>Hufflepuff</h3>
+        </div>
+
+        <div>
+          <button
+            data-type="ravenclaw"
+            id="btn-ravenclaw"
+            aria-label="ravenclaw"
+            class="house-buttons"
+          >
+            <i class="fa-solid fa-shield"></i>
+          </button>
+          <h3>Ravenclaw</h3>
+        </div>
+
+        <div>
+          <button
+            data-type="slytherin"
+            id="btn-slytherin"
+            aria-label="slytherin"
+            class="house-buttons"
+          >
+            <i class="fa-solid fa-shield"></i>
+          </button>
+          <h3>Slytherin</h3>
+        </div>
       </div>
-      <!--<div><button data-type="submit" id="btn-submit" aria-label="submit" class="house-buttons"><i class="fa-solid fa-hat-wizard"></i></button>
-      <h3>Sort Student</h3></div>-->
+
       <div id="result-area">
-        <p><span id="correct-answer">0</span>/<span id="questions-answered">0</span></p>
+        
+        <p>Your score:
+          <span id="correct-answer">0</span>/<span id="questions-answered"
+            >0</span
+          >
+        </p>
       </div>
-    
-  </main>
+    </main>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/ccedcc2638.js"

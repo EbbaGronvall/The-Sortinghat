@@ -1,69 +1,77 @@
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap')
-.zen-old mincho-regular {
-    font-family: "Zen Old Mincho", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap")
+  .zen-old mincho-regular {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* Global styling */
 body {
-    background-color: rgba(40, 40, 40, 0.7);
-    background: url(../images/hogwarts-castle.webp) no-repeat center center/cover;
-    position: relative;
-    min-height: 100vh;
-    color: whitesmoke;
-    font-family: "zen old mincho", serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+  background-color: rgba(40, 40, 40, 0.7);
+  background: url(../images/hogwarts-castle.webp) no-repeat center center/cover;
+  position: relative;
+  min-height: 100vh;
+  color: whitesmoke;
+  font-family: "zen old mincho", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 main {
-    background-color: rgba(40, 40, 40, 0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    padding: 5px;
-text-align: center;
+  background-color: rgba(40, 40, 40, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 5px;
+  text-align: center;
+}
+#game-text {
+    font-size: 150%;
 }
 #hogwarts-houses {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 90%;
 }
 #hogwarts-houses h3 {
-margin-top: 0;
-font-size: 140%;
+  margin-top: 0;
+  font-size: 140%;
 }
 .house-buttons {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    font-size: 70px;
-    padding: 5px;
-    border: 2px solid;
-    background-color: whitesmoke;
-    }
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 70px;
+  padding: 5px;
+  border: 2px solid;
+  background-color: whitesmoke;
+}
+
+.invert-colors {
+  background-color: currentColor;
+  color: whitesmoke;
+}
+
 #btn-gryffindor {
-    color: rgb(146,39,52);
+  color: rgb(146, 39, 52);
 }
 #btn-hufflepuff {
-    color: rgb(200,148,45);
-
+  color: rgb(200, 148, 45);
 }
 #btn-ravenclaw {
-color: rgb(24,66,99);
+  color: rgb(24, 66, 99);
 }
 #btn-slytherin {
-color: rgb(30,88,62);
+  color: rgb(30, 88, 62);
 }
-#btn-submit {
-    color: rgba(40, 40, 40);
+#result-area {
+font-size: 200%;
 }
