@@ -31,7 +31,7 @@ main {
   text-align: center;
 }
 #game-text {
-    font-size: 150%;
+  font-size: 150%;
 }
 #hogwarts-houses {
   display: flex;
@@ -73,5 +73,33 @@ main {
   color: rgb(30, 88, 62);
 }
 #result-area {
-font-size: 200%;
+  font-size: 200%;
+}
+
+/* Media query: medium phones (326px and up) */
+@media screen and (min-width: 326px) {
+  #hogwarts-houses div {
+    margin: 5px 30px;
+  }
+}
+
+/* Media query: large phones (568px and up) */
+@media screen and (min-width: 568px) {
+  #hogwarts-houses div {
+    margin: 5px 50px;
+  }
+}
+
+/* Media query: tablets (768px and up) */
+@media screen and (min-width: 768px) {
+  #hogwarts-houses div {
+    margin: 10px 85px;
+  }
+}
+
+/* Media query: small laptops (1024px and up) */
+@media screen and (min-width: 1024px) {
+  #hogwarts-houses div {
+    margin: 5px 30px;
+  }
 }
