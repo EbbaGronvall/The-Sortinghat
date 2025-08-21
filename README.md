@@ -95,6 +95,8 @@ For this project I choose to extract a nice gray color from the background-image
 - I tried to fix it both in css and in JavaScript but where unsuccesfull.
 - I found information about how this might be because of the fact that it is an fontawesome icon.
 
+#### Update: this bug has now been resolved.
+It was fixed by changing the "invertColors" and "revertColors" to only apply to the button and not the shield-icon too.
 ## Deployment
 
 - I deployed the webpage to GitHub pages early in the process.
@@ -120,4 +122,4 @@ For this project I choose to extract a nice gray color from the background-image
 
 ### Special Thanks
 
-- My mentor Graeme Taylor has been a trooper helping me throught this project that I've been struggling with.
+- My mentor Graeme Taylor has been a trooper helping me through this project that I've been struggling with.
