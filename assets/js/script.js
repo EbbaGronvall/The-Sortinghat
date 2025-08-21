@@ -69,13 +69,11 @@ btnRavenclaw.addEventListener("mouseout", revertColors);
 btnSlytherin.addEventListener("mouseout", revertColors);
 
 function invertColors(event) {
-  let button = event.target;
-  button.classList.add("invert-colors");
+  event.currentTarget.classList.add("invert-colors");
 }
 
 function revertColors(event) {
-  let button = event.target;
-  button.classList.remove("invert-colors");
+  event.currentTarget.classList.remove("invert-colors");
 }
 // An array of characters
 let characters = [
